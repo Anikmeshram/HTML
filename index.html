@@ -1,1 +1,221 @@
-<h1> Hello HTML </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <!--Internal CSS -->
+    <style>
+
+        div {
+            color:green;
+        }
+
+        /*selector {
+            prop1:value1;
+            prop2:value2;
+        }
+        */
+
+        .divtag {
+            margin: 50px;
+            padding:20px;
+            border: solid 1px black;
+            color: blue;
+            background-color:aquamarine;
+            font-size: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #btn {
+            background-color: blue;
+            color: white;
+        }
+        /*
+        pseudo Class
+        */
+        #btn:hover {
+            background-color: white;
+            color: blue;
+            cursor: pointer;
+        }
+
+    </style>
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="https://google.co.in">
+        <button id="btn">
+            Go to Google
+        </button>
+    </a>
+
+    <div class="divtag">This is Div</div>
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" autofocus required><br>
+
+        <textarea></textarea><br>
+
+        Gender:
+        <input type="radio" name="gender" id="Male"><label for="Male">Male</label>
+        <input type="radio" name="gender" id="Female"><label for="Female">Female</label>
+        <input type="radio" name="gender" id="Other"><label for="Other">Other</label>
+        <br>
+
+        Hobbies:
+        <input type="checkbox" name="" id="cricket"><label for="cricket">Cricket</label>
+        <input type="checkbox" name="" id="football"><label for="football">Football</label>
+        <input type="checkbox" name="" id="hockey"><label for="hockey">Hockey</label>
+        <br>
+        City:
+        <select>
+            <option value="">Select Option</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="nagpur">Nagpur</option>
+        </select>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+
+
+
+    <table border="1">
+        <caption>Sample Table</caption>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>Aniket</td>
+            </tr>
+
+            <tr>
+                <td>Akshay</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">This is Table Footer</td>
+            </tr>
+        </tfoot>
+
+
+
+
+
+
+    </table>
+
+
+    <table border="1">
+            <caption>P1</caption>
+            <tr>
+                <td colspan="2" align="center">A</td>
+
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+
+    </table>
+    <table border="1" style="background-color: yellow;">
+        <caption>P2</caption>
+        <tr>
+            <td colspan="3" align="center">A</td>
+        </tr>
+        <tr>
+            <td rowspan="2">B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">E</td>
+        </tr>
+
+        <!--Inner Table-->
+        <tr>
+            <td>
+                <table border="1" style="background-color: green;">
+                    <tr>
+                        <td>F</td>
+                        <td>G</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Inline CSS -->
+    <div style="color:red"> This is statement from div tag </div>
+    <!--Internal CSS-->
+    <div> Statement 2 </div>
+
+    <h1> Hello World </h1>
+</body>
+</html>
